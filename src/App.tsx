@@ -39,7 +39,14 @@ function App() {
                             gap: 16,
                         }}>
                             <ApiKeyInput apiKey={apiKey} setKey={setApiKey}/>
+                            <div style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '10px'
+                            }}>
                             <NetworkSwitch/>
+                            Confirm if you installed Unisat Wallet.
+                            </div>
                             {
                                 apiKey
                                     ? <>
